@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QGER: Ric Flair Drip</title>
+    <link rel="stylesheet" href="qger-template.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Only scroll into one section -->
+    <!-- <script>
+        function scrollIntoSection() {
+          const element = document.getElementById("music");
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script> -->
+
+    <!-- Scrolling into many sections -->
+    <script>
+        function scrollIntoSection() {
+            document.querySelectorAll('.sidebar__scrollbtn').forEach(button => {
+              button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Grid 1 -->
+        <!-- Button sidebar -->
+        <div class="container__grid1">
+            <div class="container__grid1__sidebar">
+                <div class="container__grid1__sidebar__sidebar1">
+                    <button onclick="scrollIntoSection()" class="sidebar__scrollbtn" data-target="back">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                            </span>
+                    </button>
+
+                    <button onclick="scrollIntoSection()" class="sidebar__scrollbtn" data-target="home">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                    </button>
+
+                    <button onclick="scrollIntoSection()" class="sidebar__scrollbtn" data-target="gantt-chart">
+                        <span class="material-symbols-outlined">
+                            view_timeline
+                            </span>
+                    </button>
+
+                    <button onclick="scrollIntoSection()" class="sidebar__scrollbtn" data-target="">
+                        <span class="material-symbols-outlined">
+                            bolt
+                        </span>
+                    </button>
+        
+                    <button onclick="scrollIntoSection()" class="sidebar__scrollbtn" data-target="">
+                        <span class="material-symbols-outlined">
+                            linked_services
+                        </span>
+                    </button>
+                </div>
+                <div class="container__grid1__sidebar__sidebar2">
+                    <button onclick="scrollIntoSection()" class="sidebar__scrollbtn" data-target="setting" >
+                        <span class="material-symbols-outlined">
+                            settings
+                            </span>
+                    </button>
+                    <button onclick="scrollIntoSection()" class="sidebar__scrollbtn" data-target="menu">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Grid 2 -->
+        <!-- Content Container -->
+        <div class="container__grid2">
+            <div class="container__grid2__content">
+                <div class="container__grid2__content__section" id="home">
+                    <h1>Welcome! Dashboard for your productivity!</h1>
+                    <h2> Productivity in the Modern Age: Challenges and Strategies</h2>
+                    <h3>Abstract</h3>
+                    <p>In the rapidly evolving landscape of the modern age, productivity remains a critical concern for individuals and organizations alike. This article explores the multifaceted nature of productivity, examining contemporary challenges and presenting effective strategies to enhance efficiency and output. Through an analysis of technological advancements, workplace dynamics, and personal habits, this paper aims to provide a comprehensive understanding of how to navigate and optimize productivity in the 21st century.</p>
+                    <h3>Introduction</h3>
+                    <p>The concept of productivity has significantly transformed over the decades, influenced by technological innovations, changes in workplace culture, and evolving personal and professional expectations. In the modern age, productivity is not merely about the amount of work done but also about the efficiency and quality of that work. This article delves into the various dimensions of productivity, identifying key challenges and offering practical strategies to improve performance.</p>
+                    <h3>Technological Advancements and Productivity</h3>
+                    <h4>The Role of Technology</h4>        
+                    <p>Technology plays a pivotal role in shaping productivity in the modern age. From automation and artificial intelligence to communication tools and project management software, technological advancements have redefined how work is performed. These tools can streamline processes, reduce human error, and facilitate better communication and collaboration.</p>
+                    <h3>Challenges Posed by Technology</h3>
+                    <p>Despite its benefits, technology also presents challenges. The constant connectivity facilitated by smartphones and the internet can lead to distractions and information overload. Moreover, the rapid pace of technological change can create a skills gap, requiring continuous learning and adaptation.</p>
+                    <h3>Workplace Dynamics</h3>
+                    <h3>Remote Work and Flexibility</h3>
+                    <p>The rise of remote work and flexible working hours has had a profound impact on productivity. While these changes can enhance work-life balance and reduce commuting time, they also require robust self-discipline and time management skills. Organizations need to foster a culture of trust and provide the necessary tools and support to help employees thrive in a remote working environment.</p>
+                    <h3>Collaboration and Team Dynamics</h3>
+                    <p>Effective collaboration is crucial for productivity. In the modern workplace, teams are often diverse and geographically dispersed. Utilizing collaborative tools and fostering a culture of open communication and mutual respect are essential for maintaining productivity in such settings.</p>
+                    <h3>Personal Habits and Productivity</h3>
+                    <h4>Time Management</h4>
+                    <p>Effective time management is a cornerstone of productivity. Techniques such as the Pomodoro Technique, time blocking, and prioritization can help individuals manage their workload more efficiently. Setting clear goals and breaking tasks into manageable chunks can prevent burnout and maintain focus.</p>
+                    <h4>Health and Well-being</h4>
+                    <p>Physical and mental well-being significantly influence productivity. Regular exercise, a balanced diet, and adequate sleep are fundamental to maintaining high energy levels and cognitive function. Additionally, mindfulness practices and stress management techniques can enhance concentration and reduce the negative impact of stress on productivity.</p>
+                    <h3> Strategies for Enhancing Productivity</h3>
+                    <h4>Leveraging Technology</h4>
+                    <p>To harness the benefits of technology while mitigating its drawbacks, individuals and organizations should adopt a strategic approach. This includes using productivity apps and tools that suit their specific needs, setting boundaries for technology use, and staying updated with relevant technological advancements.</p>
+                    <h4>Creating a Productive Work Environment</h4>
+                    <p>A productive work environment is one that minimizes distractions and promotes focus. This can be achieved through ergonomic workspace design, clear organizational policies, and a culture that values productivity and work-life balance. Encouraging regular breaks and providing opportunities for skill development can also boost productivity.</p>
+                    <h4>Continuous Improvement and Learning</h4>
+                    <p>Productivity is not a static state but a continuous process of improvement. Embracing a growth mindset, seeking feedback, and being open to change are essential for ongoing productivity enhancement. Continuous learning and professional development can help individuals stay competitive and adapt to new challenges.</p>
+                    <h3> Conclusion</h3>
+                    <p>Productivity in the modern age is a complex interplay of technology, workplace dynamics, and personal habits. By understanding the challenges and implementing effective strategies, individuals and organizations can optimize their productivity and achieve their goals. As we navigate the ever-changing landscape of the 21st century, a proactive and adaptive approach to productivity will be crucial for success.</p>
+                    <h3> References</h3>
+                    <p>- Allen, D. (2001). *Getting Things Done: The Art of Stress-Free Productivity*. Penguin Books. - Covey, S. R. (1989). *The 7 Habits of Highly Effective People*. Free Press. - Newport, C. (2016). *Deep Work: Rules for Focused Success in a Distracted World*. Grand Central Publishing. - Schwartz, T. (2010). *The Way We're Working Isn't Working: The Four Forgotten Needs That Energize Great Performance*. Free Press.</p>
+                </div>
+                
+                <!-- Gantt chart container -->
+                <div class="container__grid2__content__section" id="gantt-chart">
+                    <h1>Gantt Chart</h1>
+                    <iframe src="https://www.onlinegantt.com/#/gantt" scrolling="no" width="100%" height="600" frameborder="0"></iframe>
+                </div>
+                <!--  -->
+
+                
+            </div>
+        </div>
+
+        
+        <!-- Grid 3 -->
+        <!-- Tool panels -->
+        <div class="container__grid3">
+            <!-- Pomodoro app container -->
+            
+            <div style="margin-top: 0;" class="container__grid3__section" id="pomodoro">
+                <h1>Pomofocus</h1>
+                <p class="fa-fade" style="color: #7f7f7f;">DeepFocus with Poromodo!</p>
+                
+                <!-- Button switch pomodoro app -->
+                <!-- Enable if want to have two options -->
+                <!-- <script>
+                    function switchIntoPomodor() {
+                        document.getElementById("pomodoroApp").src = "https://pomodor.app/timer"
+                    }
+                    function switchIntoPomoFocus() {
+                        document.getElementById("pomodoroApp").src = "https://pomofocus.io/"
+                    }
+                </script>
+                <button onclick="switchIntoPomodor()"  type="button">Pomodor</button>
+                <button onclick="switchIntoPomoFocus()"  type="button">Pomofocus</button> -->
+                <iframe id="pomodoroApp" style="border-radius: 12px;" scrolling="no" width="100%" height="500" src="https://pomofocus.io/" frameborder="0" loading="lazy"></iframe>
+            </div>
+            <!--  -->
+            <!-- Musicplayer container -->
+            <div class="container__grid3__section" id="music">
+                <h1>Boost</h1>
+                <div class="section__toolbar">
+                    <div style="width: 50%; text-align: left; ">
+                        <p id="subheading" class="fa-fade">Don't kill my vibe!</p>
+                    </div>
+                    <div style="display: flex; width: 50%; justify-content: right; padding-right: 10px;">
+                        <!-- Spotify -->
+                        <i style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding-right: 20px;" onclick="switchIntoSpotify()" class="fa-brands fa-spotify fa-xl">
+                            <p style="font-size: small; padding-left: 5px;">Spotify</p>
+                        </i>
+                        <!-- Souncloud -->
+                        <i style="display: flex; flex-direction: row; justify-content: center; align-items: center;" onclick="switchIntoSoundCloud()" class="fa-brands fa-soundcloud fa-xl" >
+                            <p style="font-size: small; padding-left: 5px;">SoundCloud</p>
+                        </i> 
+                        <!-- <i onclick="switchIntoSpotify()" class="fa-brands fa-spotify fa-xl"></i>
+                        <i onclick="switchIntoSoundCloud()" class="fa-brands fa-soundcloud fa-xl" ></i>  -->
+                    </div>
+                </div>
+                <!-- Musicplayer panel -->
+                <iframe id="music-player" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7hyct538JmEE79fHAMLXFA?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <!-- <iframe id="" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1760263926&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ojdq2eb2cnjk" title="ume" target="_blank" style="color: #cccccc; text-decoration: none;">ume</a> · <a href="https://soundcloud.com/ojdq2eb2cnjk/sets/badhop" title="BADHOP" target="_blank" style="color: #cccccc; text-decoration: none;">BADHOP</a></div> -->
+                <!-- <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1837205220&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/g59" title="$UICIDEBOY$" target="_blank" style="color: #cccccc; text-decoration: none;">$UICIDEBOY$</a> · <a href="https://soundcloud.com/g59/sets/new-world-depression" title="NEW WORLD DEPRESSION" target="_blank" style="color: #cccccc; text-decoration: none;">NEW WORLD DEPRESSION</a></div> -->
+                <!-- <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1837205220&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/g59" title="$UICIDEBOY$" target="_blank" style="color: #cccccc; text-decoration: none;">$UICIDEBOY$</a> · <a href="https://soundcloud.com/g59/sets/new-world-depression" title="NEW WORLD DEPRESSION" target="_blank" style="color: #cccccc; text-decoration: none;">NEW WORLD DEPRESSION</a></div> -->
+                <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7hyct538JmEE79fHAMLXFA?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+                <!-- <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1602345415&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mezmerize-111" title="THETRILLE$T4REALE$T111" target="_blank" style="color: #cccccc; text-decoration: none;">THETRILLE$T4REALE$T111</a> · <a href="https://soundcloud.com/mezmerize-111/sets/ric-flair-drip-21-savage" title="RIC FLAIR DRIP $ 21 Savage, Offset y Metro BOOMIN $$$$$$$" target="_blank" style="color: #cccccc; text-decoration: none;">RIC FLAIR DRIP $ 21 Savage, Offset y Metro BOOMIN $$$$$$$</a></div> -->
+                <script> 
+                    function switchIntoSpotify() {
+                        document.getElementById("music-player").src = "https://open.spotify.com/embed/playlist/7hyct538JmEE79fHAMLXFA?utm_source=generator&theme=0"
+                    }
+                    function switchIntoSoundCloud() {
+                        document.getElementById("music-player").src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1602345415&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                    }
+                </script>
+                <!-- <button onclick="switchIntoSpotify()"  type="button">Spotify</button>
+                <button onclick="switchIntoSoundCloud()"  type="button">SoundCloud</button> -->
+                
+            </div>
+            <!--  -->
+
+            <!-- Image container -->
+            <div class="container__grid3__section" >
+                <h1>Visuals</h1>
+                <p id="subheading" class="fa-fade">"Frame your Inspiration"</p>
+                <div class="container__grid3__section__image" id="background">
+                    <!-- Text overlay on background-card -->
+                    <!-- <div class="over-text-left">
+                        <h1>Visuals</h1>
+                        <p class="fa-fade" style="color: #7f7f7f;">"Frame your Inspiration"</p>
+                    </div> -->
+                    <img
+                    loading="lazy" 
+                    src="src/ui_explore_html/explore_section/QGER/3.jfif" 
+                    alt="alt"
+                    style=" 
+                        width: 100%;
+                        height: 100vh;
+                        object-fit: cover; 
+                        object-position: center;  
+                        "
+                    /> 
+                </div>
+            <!--  -->
+
+            <!-- Video container -->
+            <div class="container__grid3__section">
+                <h1>Cine</h1>
+                <p id="subheading" class="fa-fade">"Where the boundaries between imagination and reality blur"</p>
+                <div class="container__grid3__section__videoplayer" id="video">
+                    <!-- Text overlay on video-card -->
+                    <!-- <div class="over-text-left">
+                        <h1>Cine</h1>
+                        <p class="fa-fade" style="color: #7f7f7f;">"Where the boundaries between imagination and reality blur"</p>
+                    </div> -->
+                    <video id="bg-video" autoplay loop style="width: 100%; height: 100vh; object-fit: cover; object-position: center;">
+                        <source 
+                            src="src/ui-qger-template/" 
+                            type="video/webm" 
+                        >                    
+                    </video>
+                    <div class="container__grid3__section__videoplayer--overlay">
+                        <!-- <div class="container--corner">
+                            <script>
+                                function toggleSound() {
+                                    var video = document.getElementById('bg-video');
+                                    var button = document.getElementById('soundButton');
+                                    var icon = button.querySelector('i');
+                                    if (video.muted) {
+                                        video.muted = false;
+                                        // button.textContent = 'Mute';
+                                        icon.classList.remove('fa-volume-xmark');
+                                        icon.classList.add('fa-volume-high');
+                                    } else {
+                                        video.muted = true;
+                                        // button.textContent = 'Unmute';
+                                        icon.classList.remove('fa-volume-high');
+                                        icon.classList.add('fa-volume-xmark');
+                                    }
+                                }
+                            </script>
+                            <button id="soundButton" onclick="toggleSound()" type="button"><i class="fa-solid fa-volume-high" style="color: #ffffe4;"></i></button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            
+        </div>
+
+
+            <!--Icon container -->
+            <div class="container__grid3__iconContainer">
+                <button onclick="scrollIntoSection()" style="background: none; border: none;" class="sidebar__scrollbtn" data-target="pomodoro">
+                    <span class="material-symbols-outlined">
+                        timer
+                        </span>
+                </button>
+
+                <button onclick="scrollIntoSection()" style="background: none; border: none;" class="sidebar__scrollbtn" data-target="music">
+                    <span class="material-symbols-outlined">
+                        headphones
+                    </span> 
+                </button>
+
+                <button onclick="scrollIntoSection()" style="background: none; border: none;" class="sidebar__scrollbtn" data-target="background">
+                    <span class="material-symbols-outlined">
+                        image
+                        </span>
+                </button>
+
+                <button onclick="scrollIntoSection()" style="background: none; border: none;" class="sidebar__scrollbtn" data-target="video">
+                    <span class="material-symbols-outlined">
+                        movie
+                        </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

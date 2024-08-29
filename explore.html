@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore page</title>
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
+    <script src="components/scroll-into-section/scroll-into-section.js"></script>
+</head>
+<body>
+    <!-- Responsive: Comming soon! -->
+    <div class="responsive">
+        <div class="responsive__overlay">
+            <video autoplay muted loop style="width: 100%; height: 100vh; object-fit: cover; object-position: center;">
+                <source 
+                    src="src/background2.webm" 
+                    type="video/webm" 
+                >                    
+            </video>
+            <div class="responsive__overlay__textbox">
+                <div class="responsive__overlay__textbox--center">
+                    <h1>Inspo</h1>
+                    <h2>Focus - Inspiration - Motivation</h2>
+                    <p class="fa-fade">The first all-in-one productivity tool with creative approach!</p>
+                    <p>
+                        Announcement:
+                        <br>
+                        <br>
+                        The application is currently in its Beta phase, 
+                        and there is no mobile version available at this time. Please access 
+                        the project on your desktop for detailed information!
+                        <br>
+                        <br>
+                        -
+                        <br>
+                        TP31
+                    </p>
+                    <p class="logo__group">NWCVN™</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topnav">
+        <div class="topnav__navigation">
+            <button onclick="scrollIntoSection()" class="topnav__scrollbtn favicon--home" data-target="home">INSPO ᴮᴱᵀᴬ</button>
+            <button onclick="scrollIntoSection()" class="topnav__scrollbtn" data-target="about">About</button>
+            <button onclick="scrollIntoSection()" class="topnav__scrollbtn" data-target="pricing">Pricing</button>
+            <button onclick="scrollIntoSection()" class="topnav__scrollbtn" data-target="explore">Explore</button>
+            <button onclick="scrollIntoSection()" class="topnav__scrollbtn" data-target="sign-up">Sign up</button>
+        </div>
+    </div>
+    <div class="content">
+        <div id="home" class="content__home">
+            <video id="video" autoplay muted loop style="width: 100%; height: 100vh; object-fit: cover; object-position: center;">
+                <source 
+                    src="src/ui_explore_html/bg/1.mp4" 
+                    type="video/mp4" 
+                >   
+            </video>
+            <div class="content__home__overlay">
+                <div class="content__home__overlay--corner">
+                    <div class="left">
+                        <p style="color: var(--font-secondary-color);">
+                            *Caution! This project is for study purpose, all copyright contents in this project is not for commercial! 
+                            BUSI1714 - International Entrepreneurship Project 
+                        </p>
+                    </div>
+                    <div class="right">
+                        <script src="components/toggle-sound/toggle-sound.js"></script>
+                        <button id="soundButton" onclick="toggleSound()" type="button"><i class="fa-solid fa-volume-high" style="color: #ffffe4;"></i></button>
+                    </div>
+                </div>
+                <div class="content__home__overlay--center">
+                    <h1>Inspo</h1>
+                    <h2 class="typewriter">Focus - Inspiration - Motivation</h2>
+                    <p class="fa-fade">The first creative all-in-one productivity tool on the world!</p>
+                    <button onclick="scrollIntoSection()" class="topnav__scrollbtn" data-target="about">Get Started</button>
+                    <!-- <p class="btn fa-fade">Get Started!</p> -->
+                </div>
+                <div class="content__home__overlay--corner">
+                    <div class="left fa-fade">
+                        <p style="font-size: 1.5rem;">+</p>
+                        <!-- <p style="font-size: large;">+</p> -->
+                    </div>
+                    <div class="right fa-fade">
+                        <p style="font-size: 1.5rem;">+</p>
+                        <!-- <p style="font-size: large;">+</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="content__about">
+            <h1 class="content--center fa-fade">About</h1>
+            <div class="content__about__textbox">
+                <p>
+                    INSPO is a revolutionary all-in-one productivity platform designed to manage work 
+                    progress and boost personal motivation creatively and uniquely. Unlike Notion’s
+                    minimalist and monotonous approach, INSPO emphasizes personalization and dynamic
+                    engagement. In today's fast-paced world, INSPO helps users easily enhance
+                    motivation, maintain creativity, and efficiently manage productivity and work progress,
+                     ensuring that staying disciplined and motivated is effortless.
+                </p>
+            </div>
+            <div class="textbox-animation">
+                <div class="textbox-animation__horizontal-scrolling-items">
+                    <div class="textbox-animation__horizontal-scrolling-items__item">
+                        <h1>inspo™ inspo™ inspo™ inspo™ inspo™</h1>
+                    </div>
+                    <!-- <div class="textbox-animation__horizontal-scrolling-items__item">
+                        <h1> inspo™ inspo™ inspo™</h1>
+                    </div> -->
+                </div>
+                <!-- <div class="textbox-animation__horizontal-scrolling-itmes--reverse">
+                    <div class="textbox-animation__horizontal-scrolling-items__item--reverse">
+                        <h1>inspo™ inspo™ inspo™ inspo™ inspo™</h1>
+                    </div>
+                </div> -->
+            </div>
+            <div class="content__about__textbox--gradient-animation">
+                <p class="content--center" style="font-size: 5rem; margin: 40px;">The world's first creative productivity platform!</p>
+            </div>
+            <div class="textbox-animation">
+                <div class="textbox-animation__horizontal-scrolling-itmes--reverse">
+                    <div class="textbox-animation__horizontal-scrolling-items__item--reverse">
+                        <h1>inspo™ inspo™ inspo™ inspo™ inspo™</h1>
+                    </div>
+                </div>
+            </div>
+            <p class="content--center" style="padding: 0 40px; font-size: 1.2rem;">
+                You use too many productivity applications? Or your productivity application is too simple and minimalist?
+            </p>
+            <p>Are you student? Don't worry! We have a free plan for you!😎</p>
+            <p style="font-size: 1.5rem; font-family: var(--typography-brand-title);">Try INSPO by</p>
+            <button onclick="scrollIntoSection()" class="topnav__scrollbtn" data-target="pricing">Choose a Plan</button>
+            <div style="padding: 20px;">
+            </div>
+        </div>
+        <div id="pricing" class="content__pricing">
+            <h1 class="content--center fa-fade">Pricing</h1>
+            <p class="content--center" style="padding-bottom: 20px;">Choose a Plan that right for you!🤔</p>
+            <div class="content__pricing__items">
+                <div class="content__pricing__items__item item--basic">
+                    <h2>Basis</h2>
+                    <h1>Free</h1>
+                    <button class="sign-up">Sign up</button>
+                    <p>Basic features</p>
+                    <div class="textbox">
+                        <ul>
+                            <li>3 free templates.</li>
+                            <li>All productivity tools integrated.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content__pricing__items__item item--student">
+                    <div class="tag--popular">
+                        <h2>Plus</h2>
+                        <p>Popular</p>
+                    </div>
+                    <!-- <div style="display: flex; align-items:end;"><h1 style="font-family: var(--typography-brand-subtitle)">$4 <h4 style="color: gray; padding-right: 5px;">/month</h4></h1></div> -->
+                    <h1>$4/month</h1>
+                    <button class="sign-up sign-up--popular">Get started!</button>
+                    <p>Every feature of Free +</p>
+                    <div class="textbox">
+                        <ul>
+                            <li>Unlimited free templates.</li>
+                            <li>MusicPanel available.</li>
+                            <li>VisualPanel available.</li>
+                            <li>CinePanel available.</li>
+                            <li>Custom ContentPanel available.</li>
+                            <li>Integrated PDF reader.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content__pricing__items__item item--pro">
+                    <h2>Pro</h2>
+                    <h1>$15/month</h1>
+                    <button class="sign-up">Get started!</button>
+                    <p>Every feature of Student +</p>
+                    <div class="textbox">
+                        <ul>
+                            <li>"Pro" label for profile.</li>
+                            <li>Advanced personalization.</li>
+                            <li>Customizable templates for sale.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="explore" class="template content__explore">
+        <h1 class="content--center fa-fade">INSPO Theme</h1>
+        <p class="content--center">Explore creative themes and get the vibe!</p>
+    </div>
+    
+    <div class="container">
+        <div class="container__featured">
+            <div class="container__featured__title">
+                <h2>Featured</h2>
+            </div>
+            <div class="container__featured__category">
+                <script src="components/toggleable-tabs/toggleable-tabs.js"></script>
+                <div class="container__featured__category__tab">
+                    <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'all')">All</button>
+                    <button class="tablinks" onclick="openTab(event, 'modern')">Modern</button>
+                    <button class="tablinks" onclick="openTab(event, 'anime')">Anime</button>
+                    <button class="tablinks" onclick="openTab(event, 'aesthetic')">Aesthetic</button>
+                </div>
+                <div class="container__featured__category__browse">
+                    <a href="">Browse more theme</a> 
+                    <span class="material-symbols-rounded">
+                        arrow_forward
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="all" class="container__theme">
+            <div class="container__card 1">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme theme-1">
+                    <a class="clickable-link" href="http://127.0.0.1:5500/qger-template.html" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ui_explore_html/explore_section/QGER/4.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">QGER</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Ric Flair Drip</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 2">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme theme-2">
+                    <a class="clickable-link" href="http://127.0.0.1:5500/ghibli-template.html" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/2.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Makuro</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Ghibli</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 3">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme theme-3">
+                    <a class="clickable-link" href="http://127.0.0.1:5500/default-template.html" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ui-default-html/glass.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">INSPO</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Abstract</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 4">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 5">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-2"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Synonime Studio</a>             
+                            <!-- <p id="author">Synonime Studio</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 6">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-3"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ambient.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>    
+                            <a id="author" href="" target="" rel="noopener noreferrer">Final Fantasy</a>             
+                            <!-- <p id="author">Final Fantasy</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Zack Affair</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 7">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-4"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ambient.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Pixel</a>             
+                            <!-- <p id="author">Pixel</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Street</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 8">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-5"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/aesthetic_school.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">School</a>             
+                            <!-- <p id="author">School</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">༼ つ ◕_◕ ༽つ📖</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 9">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-6"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/aesthetic_ghibli.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Anime Inspo</a>             
+                            <!-- <p id="author">Anime Inspo</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Ghibli</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 10">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-7"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img4.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Aesthetic Vibe</a>             
+                            <!-- <p id="author">Anime Inspo</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">In my memory...</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 11">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>  
+                            <a id="author" href="" target="" rel="noopener noreferrer">Author</a>             
+                            <!-- <p id="author">Author</p> -->
+                        </div>
+                        <div class="right date">
+                            <p>10$</p>
+                            <button class="button">
+                                <!-- <span class="material-symbols-rounded">
+                                    bookmark
+                                </span> -->
+                                <!-- <span class="material-symbols-rounded">
+                                    paid
+                                    </span> -->
+                                <span class="material-symbols-rounded">
+                                    shopping_cart
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right type">
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="container__card 12">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-8"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>  
+                            <a id="author" href="" target="" rel="noopener noreferrer">Author</a>             
+                            <!-- <p id="author">Author</p> -->
+                        </div>
+                        <div class="right date">
+                            <p>10$</p>
+                            <button class="button">
+                                <!-- <span class="material-symbols-rounded">
+                                    bookmark
+                                </span> -->
+                                <!-- <span class="material-symbols-rounded">
+                                    paid
+                                    </span> -->
+                                <span class="material-symbols-rounded">
+                                    shopping_cart
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right type">
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modern" class="container__theme">
+            <div class="container__card 1">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container__card 2">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 3">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 4">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 5">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-2"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Synonime Studio</a>             
+                            <!-- <p id="author">Synonime Studio</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 6">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-3"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ff7.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>    
+                            <a id="author" href="" target="" rel="noopener noreferrer">Final Fantasy</a>             
+                            <!-- <p id="author">Final Fantasy</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Zack Affair</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 7">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-4"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ambient.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Pixel</a>             
+                            <!-- <p id="author">Pixel</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Street</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 8">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-5"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/aesthetic_school.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">School</a>             
+                            <!-- <p id="author">School</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">༼ つ ◕_◕ ༽つ📖</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 9">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-6"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/aesthetic_ghibli.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Anime Inspo</a>             
+                            <!-- <p id="author">Anime Inspo</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Ghibli</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 10">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-7"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img4.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Aesthetic Vibe</a>             
+                            <!-- <p id="author">Anime Inspo</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">In my memory...</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 11">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>  
+                            <a id="author" href="" target="" rel="noopener noreferrer">Author</a>             
+                            <!-- <p id="author">Author</p> -->
+                        </div>
+                        <div class="right date">
+                            <p>10$</p>
+                            <button class="button">
+                                <!-- <span class="material-symbols-rounded">
+                                    bookmark
+                                </span> -->
+                                <!-- <span class="material-symbols-rounded">
+                                    paid
+                                    </span> -->
+                                <span class="material-symbols-rounded">
+                                    shopping_cart
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right type">
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="container__card 12">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-8"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>  
+                            <a id="author" href="" target="" rel="noopener noreferrer">Author</a>             
+                            <!-- <p id="author">Author</p> -->
+                        </div>
+                        <div class="right date">
+                            <p>10$</p>
+                            <button class="button">
+                                <!-- <span class="material-symbols-rounded">
+                                    bookmark
+                                </span> -->
+                                <!-- <span class="material-symbols-rounded">
+                                    paid
+                                    </span> -->
+                                <span class="material-symbols-rounded">
+                                    shopping_cart
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right type">
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="anime" class="container__theme">
+            <div class="container__card 1">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container__card 2">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 3">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 4">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 5">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-2"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Synonime Studio</a>             
+                            <!-- <p id="author">Synonime Studio</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 6">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-3"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ff7.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>    
+                            <a id="author" href="" target="" rel="noopener noreferrer">Final Fantasy</a>             
+                            <!-- <p id="author">Final Fantasy</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Zack Affair</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 7">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-4"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ambient.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Pixel</a>             
+                            <!-- <p id="author">Pixel</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Street</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 8">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-5"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/aesthetic_school.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">School</a>             
+                            <!-- <p id="author">School</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">༼ つ ◕_◕ ༽つ📖</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 9">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-6"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/aesthetic_ghibli.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Anime Inspo</a>             
+                            <!-- <p id="author">Anime Inspo</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Ghibli</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 10">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-7"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img4.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Aesthetic Vibe</a>             
+                            <!-- <p id="author">Anime Inspo</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">In my memory...</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 11">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>  
+                            <a id="author" href="" target="" rel="noopener noreferrer">Author</a>             
+                            <!-- <p id="author">Author</p> -->
+                        </div>
+                        <div class="right date">
+                            <p>10$</p>
+                            <button class="button">
+                                <!-- <span class="material-symbols-rounded">
+                                    bookmark
+                                </span> -->
+                                <!-- <span class="material-symbols-rounded">
+                                    paid
+                                    </span> -->
+                                <span class="material-symbols-rounded">
+                                    shopping_cart
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right type">
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="container__card 12">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-8"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>  
+                            <a id="author" href="" target="" rel="noopener noreferrer">Author</a>             
+                            <!-- <p id="author">Author</p> -->
+                        </div>
+                        <div class="right date">
+                            <p>10$</p>
+                            <button class="button">
+                                <!-- <span class="material-symbols-rounded">
+                                    bookmark
+                                </span> -->
+                                <!-- <span class="material-symbols-rounded">
+                                    paid
+                                    </span> -->
+                                <span class="material-symbols-rounded">
+                                    shopping_cart
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right type">
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="aesthetic" class="container__theme">
+            <div class="container__card 1">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container__card 2">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 3">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 4">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>               
+                            <a id="author" href="" target="" rel="noopener noreferrer">Test</a>             
+                            <!-- <p id="author">Test </p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Test</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__card 5">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-2"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Synonime Studio</a>             
+                            <!-- <p id="author">Synonime Studio</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 6">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-3"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ff7.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>    
+                            <a id="author" href="" target="" rel="noopener noreferrer">Final Fantasy</a>             
+                            <!-- <p id="author">Final Fantasy</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Zack Affair</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 7">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-4"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/ambient.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Pixel</a>             
+                            <!-- <p id="author">Pixel</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Street</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 8">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-5"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/aesthetic_school.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">School</a>             
+                            <!-- <p id="author">School</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">༼ つ ◕_◕ ༽つ📖</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 9">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-6"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/aesthetic_ghibli.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Anime Inspo</a>             
+                            <!-- <p id="author">Anime Inspo</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">Ghibli</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 10">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-7"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img4.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>                            
+                            <a id="author" href="" target="" rel="noopener noreferrer">Aesthetic Vibe</a>             
+                            <!-- <p id="author">Anime Inspo</p> -->
+                        </div>
+                        <div class="right price">
+                            <p>Free</p>
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    bookmark
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">In my memory...</p>
+                        </div>
+                        <div class="right date">
+                            <!-- <p id="date">Theme</p> -->
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container__card 11">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-1"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>  
+                            <a id="author" href="" target="" rel="noopener noreferrer">Author</a>             
+                            <!-- <p id="author">Author</p> -->
+                        </div>
+                        <div class="right date">
+                            <p>10$</p>
+                            <button class="button">
+                                <!-- <span class="material-symbols-rounded">
+                                    bookmark
+                                </span> -->
+                                <!-- <span class="material-symbols-rounded">
+                                    paid
+                                    </span> -->
+                                <span class="material-symbols-rounded">
+                                    shopping_cart
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right type">
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="container__card 12">
+                <!-- <div class="container__card__textbox--overlay">
+                    <h2>Dark Academia</h2>
+                </div> -->
+                <div class="theme-8"></div>
+                <div class="container__card__textbox__info">
+                    <div class="container__card__textbox__info__line1">
+                        <div class="left author">
+                            <picture>
+                                <img class="avatar" loading="lazy" src="src/img.jfif" alt="profile" width="50" height="50"
+                                style="object-fit: cover; object-position: center; border-radius: 50%;">
+                            </picture>  
+                            <a id="author" href="" target="" rel="noopener noreferrer">Author</a>             
+                            <!-- <p id="author">Author</p> -->
+                        </div>
+                        <div class="right date">
+                            <p>10$</p>
+                            <button class="button">
+                                <!-- <span class="material-symbols-rounded">
+                                    bookmark
+                                </span> -->
+                                <!-- <span class="material-symbols-rounded">
+                                    paid
+                                    </span> -->
+                                <span class="material-symbols-rounded">
+                                    shopping_cart
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container__card__textbox__info__line2">
+                        <div class="left subheading">
+                            <p id="name">SEE-THE-SUN</p>
+                        </div>
+                        <div class="right type">
+                            <button class="button">
+                                <span class="material-symbols-rounded">
+                                    more_horiz
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container__footer">
+            <!-- <div class="container__footer__item"></div> -->
+            <h1 style="color: var(--font-secondary-color);">Become a contributors</h1>
+            <p class="fa-fade">Click to navigate</p>
+            <!-- <button onclick="scrollIntoSection()" class="topnav__scrollbtn" data-target="sign-up">Join the creators community</button> -->
+            <div class="container__footer__icon fa-flip">
+                <button onclick="scrollIntoSection()" class="topnav__scrollbtn" data-target="sign-up">
+                    <!-- <i class="fa-regular fa-circle-down" style="color: #ffffe4; font-size: 100px;"></i> -->
+                    <i class="fa-solid fa-star-of-life" style="color: #ffffe4; font-size: 100px;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="content__sign-up">
+        <div id="sign-up" class="content__sign-up__bg-video">
+            <video id="video" autoplay muted loop style="width: 100%; height: 100vh; object-fit: cover; object-position: center;">
+                <source 
+                    src="src/ui_explore_html/bg/1.mp4" 
+                    type="video/mp4" 
+                >   
+            </video>
+            <div class="content__sign-up__bg-video--overlay">
+                <div class="content__sign-up__bg-video--overlay--center">
+                    <h1 class="content--center fa-fade">Join the Inspo creators community</h1>
+                    <p class="content--center" style="font-size: 1.2rem;">Ready to boost your focus and creative to the next level? Join with us and dive in!</p>
+                    <div class="textbox-animation">
+                        <div class="textbox-animation__horizontal-scrolling-items">
+                            <div class="textbox-animation__horizontal-scrolling-items__item">
+                                <h1>inspo™ inspo™ inspo™ inspo™ inspo™</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=DmwnWrRspgvghwlhTsPlkFfmlZmBRLpHJFvhFhFgxrfpNcFqfbnJkDmkcKXbJWVQJBWLJPqSsqHG" target="_blank" rel="noopener noreferrer">Send email to INSPO</a>
+                </button>
+                <div class="content__sing-up__bg-video--overlay--corner fa-fade">
+                    <!-- <a href="mailto:your-email@example.com?subject=Hello&body=Hi%20Phu,%20I%20am%20interested%20in%20your%20project.%20I%20am%20%7Byour%20name%7D%20and%20I%20want%20to%20contribute%20to%20the%20Inspo%20project.%20This%20is%20my%20vibe:">Send me an email</a> -->
+                    <p style="padding-left: 40px; color: var(--font-brand-color);">NWCVN®</p>
+                    <!-- <div class="left">
+                    </div> -->
+                    <p>2024</p>
+                    <!-- <div class="center">
+                    </div> -->
+                    <p style="padding-right: 40px;">TP31™</p>
+                    <!-- <div class="right">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+</footer>
+</html>
