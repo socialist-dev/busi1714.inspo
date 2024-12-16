@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/v2/components/panel/panel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container__panel">
+        <div class="panel__items">
+            <div class="panel-item" id="chatbot">
+                <h1>Inspo Chatbot</h1>
+                <p style="color: var(--base-pure-tide-40-black);">Your AI Productivity Assistant</p>
+                <iframe class="chatbot" width="100%" height="800px" src="https://socialist-dev.github.io/inspo-chatbot-v1/" frameborder="0"></iframe>
+            </div>
+            <div class="panel-item" id="pomodoro">
+                <h1>Pomofocus</h1>
+                <p style="color: var(--base-pure-tide-40-black);">Productive with Pomodoro</p>
+                <iframe id="pomodoroApp" style="border-radius: 12px;" scrolling="no" width="100%" height="500" src="https://pomofocus.io/" frameborder="0" loading="lazy"></iframe>
+            </div>
+            <div class="panel-item" id="music">
+                <h1>Mood</h1>
+                <div class="item__header">
+                    <p style="color: var(--base-pure-tide-40-black)">Boost Your Groove</p>
+                    <div class="header-btn">
+                        <div class="music-btn spotify-btn">
+                            <i onclick="switchIntoSpotify()" class="fa-brands fa-spotify fa-xl"></i>
+                            <p>Spotify</p>
+                        </div>
+                        <div class="music-btn soundcloud-btn">
+                            <i onclick="switchIntoSoundCloud()" class="fa-brands fa-soundcloud fa-xl" ></i>
+                            <p>SoundCloud</p>
+                        </div>
+                    </div>
+                </div>
+                <iframe id="music-player" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0EncHaaOPWyUSvpvwFRaS2?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <script>
+                    function switchIntoSpotify() {
+                        document.getElementById("music-player").src = "https://open.spotify.com/embed/playlist/0EncHaaOPWyUSvpvwFRaS2?utm_source=generator&theme=0"
+                    }
+                    function switchIntoSoundCloud() {
+                        document.getElementById("music-player").src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1711063551&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                    }
+                </script>
+            </div>
+            <div class="panel-item">
+                <h1>Visuals</h1>
+                <img id="visual"
+                    loading="lazy" 
+                    src="/v2/static/img/logo.jpg" 
+                    alt="alt"
+                    style=" 
+                        width: 100%;
+                        height: 100vh;
+                        object-fit: cover; 
+                        object-position: center;  
+                        "
+                /> 
+            </div>
+            <!-- <div class="panel-item">
+                <h1>Cine</h1>
+            </div> -->
+        </div>
+        <div class="panel__btn">
+            <button onclick="scrollIntoSection()" style="background: none; border: none;" class="sidebar__scrollbtn" data-target="chatbot">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M360-360H236q-24 0-35.5-21.5T203-423l299-430q10-14 26-19.5t33 .5q17 6 25 21t6 32l-32 259h155q26 0 36.5 23t-6.5 43L416-100q-11 13-27 17t-31-3q-15-7-23.5-21.5T328-139l32-221Z"/></svg>
+            </button>
+            <button onclick="scrollIntoSection()" style="background: none; border: none;" class="sidebar__scrollbtn" data-target="pomodoro">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M393.33-853.33q-14.16 0-23.75-9.62-9.58-9.62-9.58-23.83 0-14.22 9.58-23.72 9.59-9.5 23.75-9.5h173.34q14.16 0 23.75 9.62 9.58 9.61 9.58 23.83 0 14.22-9.58 23.72-9.59 9.5-23.75 9.5H393.33Zm86.79 444.66q14.21 0 23.71-9.58t9.5-23.75v-166.67q0-14.16-9.61-23.75-9.62-9.58-23.84-9.58-14.21 0-23.71 9.58-9.5 9.59-9.5 23.75V-442q0 14.17 9.61 23.75 9.62 9.58 23.84 9.58Zm-.12 328q-74 0-139.5-28.5T226-186.67q-49-49-77.5-114.5T120-440.67q0-74 28.5-139.5t77.5-114.5q49-49 114.5-77.5t139.5-28.5q65.33 0 123.33 21.34 58 21.33 105.34 60.66L738-748q9.67-9.67 23.67-9.67 14 0 23.66 9.67 9.67 9.67 9.67 23.67 0 14-9.67 23.66L756-671.33Q792.67-628 816.33-571 840-514 840-440.67q0 74-28.5 139.5T734-186.67q-49 49-114.5 77.5T480-80.67Z"/></svg>
+            </button>
+            <button onclick="scrollIntoSection()" style="background: none; border: none;" class="sidebar__scrollbtn" data-target="music">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M272-120h-85.33q-27 0-46.84-19.83Q120-159.67 120-186.67V-480q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v293.33q0 27-19.83 46.84Q800.33-120 773.33-120H688q-27.5 0-47.08-19.58-19.59-19.59-19.59-47.09v-170.66q0-27.5 19.59-47.09Q660.5-424 688-424h85.33v-56q0-122.57-85.38-207.95T480-773.33q-122.57 0-207.95 85.38T186.67-480v56H272q27.5 0 47.08 19.58 19.59 19.59 19.59 47.09v170.66q0 27.5-19.59 47.09Q299.5-120 272-120Z"/></svg>
+            </button>
+            <button onclick="scrollIntoSection()" style="background: none; border: none;" class="sidebar__scrollbtn" data-target="visual">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M186.67-120q-27 0-46.84-19.83Q120-159.67 120-186.67v-586.66q0-27 19.83-46.84Q159.67-840 186.67-840h586.66q27 0 46.84 19.83Q840-800.33 840-773.33v586.66q0 27-19.83 46.84Q800.33-120 773.33-120H186.67Zm84-158H690q10 0 14.67-9 4.66-9-1.34-17.67l-114.66-153q-5.34-6.66-13.34-6.66T562-457.67L447.33-308l-78.66-107q-5.34-6.67-13.34-6.67T342-415l-84 110.33q-6.67 8.67-2 17.67 4.67 9 14.67 9ZM340-566.67q22.33 0 37.83-15.5t15.5-37.83q0-22.33-15.5-37.83T340-673.33q-22.33 0-37.83 15.5T286.67-620q0 22.33 15.5 37.83t37.83 15.5Z"/></svg>
+            </button>
+            <!-- <button onclick="scrollIntoSection()" style="background: none; border: none;" class="sidebar__scrollbtn" data-target="cine">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m160-800 65 130q7 14 20 22t28 8q30 0 46-25.5t2-52.5l-41-82h80l65 130q7 14 20 22t28 8q30 0 46-25.5t2-52.5l-41-82h80l65 130q7 14 20 22t28 8q30 0 46-25.5t2-52.5l-41-82h120q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800Z"/></svg>
+            </button> -->
+        </div>
+    </div>
+    <script src="/v2/src/scrollIntoSection.js"></script>
+</body>
+</html>

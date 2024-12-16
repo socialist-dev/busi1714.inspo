@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="/v2/components/pomodoro/pomodoro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-box">
+          <div class="tabs">
+            <button id="pomodoro" class="tab active">Pomodoro</button>
+            <button id="short-break" class="tab">Short Break</button>
+            <button id="long-break" class="tab">Long Break</button>
+          </div>
+          <div class="timer-display">
+            <h1 id="time">25:00</h1>
+          </div>
+          <button id="start-btn" class="start-btn">START</button>
+          <p id="status">#1 Time to focus!</p>
+        </div>
+        <!-- <div class="task-section">
+          <h2>Tasks</h2>
+          <div class="add-task">
+            <button id="add-task-btn">+ Add Task</button>
+          </div>
+        </div> -->
+      </div>
+    <audio id="alarm-sound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+    <script src="/v2/components/pomodoro/pomodoro.js"></script>
+</body>
+</html>

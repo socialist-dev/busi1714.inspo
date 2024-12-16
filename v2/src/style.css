@@ -1,0 +1,17 @@
+@import url(/v2/src/css/brand.css);
+@import url(/v2/components/layout/layout.css);
+@import url(/v2/components/sidebar/sidebar.css);
+@import url(/v2/components/text-editor/text-editor.css);
+@import url(/v2/components/sidebar/sidebar.css);
+@import url(/v2/components/panel/panel.css);
+@import url(/v2/components/to-do-list/todo-list.css);
+
+body {
+    margin: 0; 
+    padding: 0; 
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}

@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "BHN Akira Bold";
+    src: url(/public/fonts/BHN\ Akira\ Bold.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "BHN Akira Super Bold";
+    src: url(public/fonts/BHN\ Akira\ Super\ Bold.woff2) format("woff2");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/public/fonts/montserrat-v26-vietnamese-regular.woff2) format("woff2");
+}
+@font-face {
+    font-family: 'DFVN Constructio Grotesk';
+    src: url(/public/fonts/DFVN\ Constructio\ Grotesk.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    /* Pure color */
+    --base-pure-black-color: #000000;
+    --base-pure-tide-1-black: #111111;
+    --base-pure-tide-10-black: #1a1a1a;
+    --base-pure-tide-20-black: #333333;
+    --base-pure-tide-30-black: #4d4d4d;
+    --base-pure-tide-40-black: #666666;
+    --base-pure-tide-50-black: #808080;
+    --base-pure-white-color: #ffffff;
+    --base-pure-blue-color: #0000ff;
+    /* Brand color */
+    --base-brand-color: #0000ff;
+    --base-brand-primary-color: #ffffe4;
+    --base-brand-secondary-color: #ff4800;
+    --base-brand-secondary-tide-10-color: #E64C00;
+    --base-brand-secondary-tide-20-color: #CC3F00;
+    --base-brand-secondary-tide-30-color: #B33C00;
+    --base-brand-secondary-tide-40-color: #993300;
+    --base-brand-secondary-tide-50-color: #802600;
+    --base-brand-cartoon-color: #fbca1f;
+    /* Typography */
+    --typeface-title-brand: "BHN Akira Bold";
+    --typeface-bold-title-brand: "BHN Akira Super Bold";
+    --typeface-title-brand-2: "DFVN Constructio Grotesk";
+    --typeface-subtile-paragraph: "Montserrat";
+    /* Boder */
+    --border: 1px solid #333333;
+    /* Button */
+    --btn-color: #d6e1ff;
+    --btn-font-size: 14px;
+    --btn-padding: 5px 12px; 
+    --btn-border: 2px solid #435db1;
+    --btn-border-radius: 10px;
+    --btn-background: #171d3b80;
+    --btn-color-hover: #ffffff;
+    --btn-background-hover: #3e63dd; 
+    --btn-border-hover: 2px solid #3e63dd;
+    /* Button brand */
+    --btn-border-spotify: 2px solid #30A46C;
+    --btn-color-spotify: #B1F1CB;
+    --btn-background-spotify: #15251D80;
+    --btn-color-spotify-hover: #1DB954;
+    --btn-border-soundcloud: 2px solid #FF977D;
+    --btn-color-soundcloud: #FBD3CB;
+    /* --btn-border-soundcloud-boder: 2px solid #FF977D; */
+    --btn-background-soundcloud: #2D191580;
+    --btn-color-soundcloud-hover: #FF5500;
+    /* Badge */
+    --badge-color: #9eb1ff;
+    --badge-font-size: 12px;
+    --badge-padding: 2px 6px;
+    --badge-border-radius: 10px;
+    --badge-background: #2f62ff3c;
+    --badge-background-hover: #d6e1ff;
+    --badge-color-hover: #000;
+}
+
+/* Typeface */
+h1 {
+    font-family: var(--typeface-title-brand);
+    font-weight: normal;
+    /* font-size: 1.8rem; */
+    /* font-size: clamp(0.8rem, 2.3vw, 1.8rem); */
+    line-height: 1.2;
+}
+h2 {
+    /* font-family: var(--typeface-title-brand-2); */
+    font-weight: normal;
+    line-height: 1.2;
+}
+p {
+    font-family: var(--typeface-subtile-paragraph);
+    /* font-size: 0.9rem; */
+    line-height: 1.5;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}

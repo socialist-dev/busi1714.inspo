@@ -1,0 +1,160 @@
+@import url(/v2/src/css/brand.css);
+body {
+    margin: 0; 
+    padding: 0; 
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+.container__text-editor {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    /* xóa margin để tràn viền */
+}
+.container__text-editor .editor-container {
+    margin-top: 20px;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: scroll;
+    border: var(--border);
+    border-radius: 10px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+.container__text-editor .editor-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ql-container {
+    border: none !important;
+    background-color: #000000;
+    opacity: 1;
+    background-image: radial-gradient(#333333 1px, #000000 1px);
+    background-size: 20px 20px;
+    /* Có thể nhét ảnh vào vùng nền chỉnh sửa */
+}
+.ql-container h1 {
+    font-family: var(--typeface-title-brand-2);
+    font-weight: normal;
+}
+.ql-editor {
+    /* height: 100%; */
+    background-color: var(--btn-background);
+    color: #ffffff;
+}
+.ql-toolbar {
+    border: none !important;
+    border-bottom: var(--border) !important;
+    background-color: var(--btn-background);
+}
+.container__text-editor .text-editor__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rebeccapurple; */
+}
+.container__text-editor .text-editor__toolbar h1 {
+    flex: 50%;
+    margin: 0;
+    font-family: var(--typeface-title-brand);
+}
+.container__text-editor .text-editor__toolbar .toolbar-btn {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.container__text-editor #editor {
+    height: 100%;
+}
+.container__text-editor #saveButton, #toggleButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: var(--btn-padding);
+    font-size: var(--btn-font-side);
+    background-color: var(--btn-background);
+    color: var(--btn-color);
+    border: var(--btn-border);
+    border-radius: var(--btn-border-radius);
+    margin-left: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container__text-editor #saveButton:hover, #toggleButton:hover {
+    background-color: var(--btn-background-hover);
+    color: var(--btn-color-hover);
+    border: var(--btn-border-hover);
+}
+.container__text-editor .output {
+    height: 100%;
+    margin-top: 20px;
+    border: var(--border);
+    padding: 0 10px;
+    border-radius: var(--btn-border-radius);
+    overflow-y: scroll;
+}
+.container__text-editor .output .output__content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex: 100%;
+}
+.container__text-editor .output .output__content h1 {
+    font-family: var(--typeface-title-brand-2);
+    color: var(--btn-color);
+    font-weight: normal;
+}
+.container__text-editor .output .output__content .content__header {
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+}
+.container__text-editor .output .output__content .content__header .header-item {
+    flex: 50%;
+}
+.container__text-editor .output .output__content .content__header .header-item p {
+    text-align: justify;
+    text-align-last: left;
+}
+.container__text-editor .output .output__content .content__header .header-item img, .content__footer img {
+    /* display: flex; */
+    max-width: 450px;
+    width: 100%;
+    min-width: 50%;
+    margin: auto;
+}
+.container__text-editor .output .output__content img {
+    width: 100%;
+}
+.container__text-editor .output .output__content .content__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 100%;
+}
+.container__text-editor .output .output__content .content__footer h1, img {
+    flex: 50%;
+}
+.container__text-editor .output .output__content .content__footer span {
+    padding: 2px;
+    background-color: #fff;
+    color: #0000ff;
+}
+/* ::-webkit-scrollbar {
+    width: 0;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+} */
+@media screen and (max-width: 350px) {
+
+}
+@media screen and (min-width: 912px) {
+    .container__text-editor .output .output__content {
+        max-width: 70vw;
+    }
+}

@@ -1,0 +1,122 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+  
+body {
+    background-color: #d24b4b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #aaa;
+}
+
+.container {
+    background: #b73c3c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.dark-mode .container {
+    background: #222;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    color: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #8f2b2b;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.dark-mode .tab.active {
+    background-color: #555;
+}
+
+.timer-display h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: inherit;
+}
+
+.start-btn {
+    background: #fff;
+    color: #b73c3c;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.dark-mode .start-btn {
+    background: #444;
+    color: #aaa;
+}
+
+.task-section h2 {
+    margin: 10px 0;
+    color: inherit;
+}
+
+.add-task {
+    border: 1px dashed #fff;
+    padding: 10px;
+    border-radius: 5px;
+    color: inherit;
+}
+
+.dark-mode .add-task {
+    border-color: #aaa;
+    color: #aaa;
+}
+
+  /* Reset Button */
+.reset-btn {
+    background: #888;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+.reset-btn:hover {
+    background: #555;
+}
+
+.dark-mode .reset-btn {
+    background: #444;
+    color: #aaa;
+}
+
+.dark-mode .reset-btn:hover {
+    background: #333;
+}

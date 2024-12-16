@@ -1,0 +1,47 @@
+@import url(/v2/src/css/brand.css);
+body {
+    margin: 0; 
+    padding: 0; 
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+.container__sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container__sidebar .sidebar__item {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+}
+.container__sidebar .sidebar__item.item1 {
+    flex: 50%;
+    padding: 10px 0;
+    gap: 15px;
+}
+.container__sidebar .sidebar__item.item2 {
+    flex: 50%;
+    padding: 10px 0;
+    gap: 15px;
+    justify-content: end;
+}
+.container__sidebar .sidebar__item .sidebar__scrollbtn  {
+    background-color: transparent;
+    padding: var(--btn-padding);
+    border: 2px solid transparent;
+    border-radius: var(--btn-border-radius);
+    transition: 0.5s;
+}
+.container__sidebar .sidebar__item .sidebar__scrollbtn:hover {
+    background-color: var(--btn-background);
+    border: var(--btn-border);
+    fill: var(--btn-color);
+    cursor: pointer;
+}

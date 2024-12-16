@@ -1,0 +1,128 @@
+@import url(/v2/src/css/brand.css);
+/* body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+} */
+/* Do not copy body css */
+.container__todolist {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    /* padding: 20px; */
+    /* tạm thời tắt padding để căn chỉnh */
+}
+.container__todolist .todolist__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container__todolist .todolist__header p{
+    flex: 50%;
+    color: var(--base-pure-tide-50-black);
+    margin: 0;
+}
+.container__todolist .todolist__header .header-date {
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: end;
+}
+.container__todolist .todolist__header .header-date svg {
+    fill: var(--base-pure-tide-50-black);
+    padding-right: 5px;
+}
+.container__todolist .todolist__header .header-date .date {
+    margin: 0;
+}
+.container__todolist .container__toolbar {
+    display: flex; 
+    flex: 100%;
+}
+.container__todolist .container__toolbar .toolbar__btn {
+    display: flex;
+    flex-direction: row;
+    flex: 30%;
+    justify-content: end;
+}
+.container__todolist .container__toolbar .toolbar__btn button {
+    margin-left: 5px;
+}
+.container__todolist h1, h2 {
+    margin: 0 0 20px 0;
+}
+.container__todolist .date {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+.container__todolist input[type="text"] {
+    font-family: var(--typeface-subtile-paragraph);
+    color: #fff;
+    padding: 10px;
+    flex: 70%;
+    outline: none;
+    background-color: var(--btn-background);
+    margin-right: 10px;
+    border: var(--btn-border);
+    border-radius: var(--btn-border-radius);
+}
+.container__todolist .btn {
+    display: flex;
+    font-family: var(--typeface-subtile-paragraph);
+    align-items: center;
+    padding: var(--btn-padding);
+    border: var(--btn-border);
+    background-color: var(--btn-background);
+    color: var(--btn-color);
+    border-radius: var(--btn-border-radius);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container__todolist .btn:hover {
+    background-color: var(--btn-background-hover);
+    border: var(--btn-border-hover);
+    color: var(--btn-color-hover);
+}
+.container__todolist ul {
+    list-style-type: none;
+    padding: 0;
+}
+.container__todolist li {
+    background: #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #313131;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container__todolist .task-text {
+    flex: 1;
+    font-family: var(--typeface-subtile-paragraph);
+    text-decoration: none;
+    transition: text-decoration 0.5s, opacity 0.5s;
+}
+.container__todolist .task-text.crossed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.container__todolist .delete {
+    font-family: var(--typeface-subtile-paragraph);
+    background: var(--badge-background);
+    color: var(--badge-color);
+    border: none;
+    padding: var(--badge-padding);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.container__todolist .delete:hover {
+    font-weight: 900;
+    background: var(--badge-background-hover);
+    color: var(--badge-color-hover);
+}
