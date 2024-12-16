@@ -1,21 +1,21 @@
 @font-face {
     font-family: "BHN Akira Bold";
-    src: local('BHN Akira Bold'), url(/public/fonts/BHN\ Akira\ Bold.woff2) format("woff2");
+    src: local('BHN Akira Bold'), url(../../../public/fonts/BHN\ Akira\ Bold.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "BHN Akira Super Bold";
-    src: url(public/fonts/BHN\ Akira\ Super\ Bold.woff2) format("woff2");
+    src: url(../../../public/fonts/BHN\ Akira\ Super\ Bold.woff2) format("woff2");
     font-style: normal;
 }
 @font-face {
     font-family: "Montserrat";
-    src: local('Montserrat'), url(/public/fonts/montserrat-v26-vietnamese-regular.woff2) format("woff2");
+    src: local('Montserrat'), url(../../../public/fonts/montserrat-v26-vietnamese-regular.woff2) format("woff2");
 }
 @font-face {
     font-family: 'DFVN Constructio Grotesk';
-    src: local('DFVN Constructio Grotesk'), url(/public/fonts/DFVN\ Constructio\ Grotesk.woff2) format('woff2');
+    src: local('DFVN Constructio Grotesk'), url(../../../public/fonts/DFVN\ Constructio\ Grotesk.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
 }
