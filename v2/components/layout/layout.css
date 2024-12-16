@@ -1,3 +1,13 @@
+/* @import url(/v2/src/css/brand.css);
+
+body {
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+} */
 .container__layout {
     display: flex;
     flex: 100%;
@@ -18,14 +28,14 @@
     border: var(--border)
 }
 .container__layout .layout__items .layout__items-item.item1 {
-    flex: 10%;
+    flex: 2%;
     padding: 10px;
 }
 .container__layout .layout__items .layout__items-item.item2 {
-    flex: 60%;
+    flex: 64%;
 }
 .container__layout .layout__items .layout__items-item.item3 {
-    flex: 30%;
+    flex: 34%;
 }
 .container__layout .layout__items .layout__items-item.item2 .view, .layout__items-item.item3 .view {
     height: 100%;
